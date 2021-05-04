@@ -1,0 +1,81 @@
+$color: #8ab549;;
+
+.color {
+    background-color: $color;
+}
+
+
+.header {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    transition: background-color 0.5s ease;
+}
+
+.header:hover,
+.header:active {
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+  
+.header.shadow {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+  
+.header.hidden {
+    transition: background-color 0.3s ease;
+    transform: translateY(-110%)!important;
+    transition: transform 0.3s ease;
+}
+
+.lineHeight {
+    // line-height: 0.8rem;
+}
+
+// carousel media query
+@media (max-width: 576px) {
+    .wordBreak {
+        white-space: normal;
+    }
+}
+
+.dropdownDivider {
+    margin: 0.2rem 0!important;
+}
+
+.fixedTop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    // overflow-y: visible;
+    max-height: 100%;
+}
+
+// carousel media query
+@media (max-width: 576px) {
+
+    .fixedTop {
+        overflow-y: scroll;
+    }
+}
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {
+    .fixedTop {
+        overflow-y: scroll;
+    }
+}
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) { 
+    .fixedTop {
+        overflow-y: visible;
+    }
+}
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
+    .fixedTop {
+        overflow-y: visible;
+    }
+}

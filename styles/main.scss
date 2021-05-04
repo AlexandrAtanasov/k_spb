@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#__next {
+    // start of basic properties 100% heights + h-100 for tags html and body - for sticky footer
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // end of properties for sticky footer
+}
+
+nav {
+    // height: 4rem;
+}
+
+//fonts sizes
+legend {
+    font-size: 1rem;
+}
+
+
+// basic margins
+main {
+    margin-top: 56px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.carousel {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+// carousel media query
+// TODO: add more media breakpoints
+@media (max-width: 576px) {
+    .carousel {
+        height: 80vh;
+        overflow: hidden;
+    }  
+    .carousel-item img {
+        // width: auto!important;
+        object-fit: cover;
+        height: 80vh;
+    }
+}
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {
+}
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) { 
+}
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
+    .carousel {
+        height: 100vh;
+        overflow: hidden;
+    }  
+    .carousel-item img {
+        // width: auto!important;
+        object-fit: cover;
+        height: 100vh;
+    }
+}

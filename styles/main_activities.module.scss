@@ -1,0 +1,43 @@
+.activities_column_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around; 
+    // padding-top: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    // margin-bottom: -1rem;
+    margin-bottom: 1rem;
+}
+
+.activities_row_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    text-align: center; 
+    justify-content: space-around; 
+}
+
+.activities_elem_container {
+    display: inline-block; 
+    margin: 0.2rem;
+}
+
+.activities_elem_img {
+    max-height: 5rem;
+
+    // make icons white/black
+    filter: invert(1);
+}
+
+.activities_elem_text {
+    color: white;
+}
+
+//TODO: rename module
+.advantages_elem_width {
+    max-width: 370px;
+}
+
