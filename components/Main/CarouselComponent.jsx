@@ -1,6 +1,9 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
+import { MainPresaleButton } from '../Main/MainPresaleButton'
+
+
 // import styles
 import style from '../../styles/components/Carousel.module.scss'
 
@@ -27,6 +30,7 @@ export function CarouselComponent( {data} ) {
                             >
                                 {img.p}
                             </p>
+                            <MainPresaleButton/>
                         </Carousel.Caption>
                     </Carousel.Item>            
                 )

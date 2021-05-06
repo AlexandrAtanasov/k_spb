@@ -7,6 +7,7 @@ import { HeadingComponent } from '../components/Heading/HeadingComponent'
 import { MainStartIntro } from '../components/Main/MainStartIntro'
 import { MainCentersComponent } from '../components/Main/MainCentersComponent'
 import { MainDoctorsComponent } from '../components/Main/MainDoctorsComponent'
+import { MainPresale } from '../components/Main/MainPresale'
 
 // import data
 import { main_info } from '../data/main/main_info'
@@ -23,6 +24,10 @@ export default function HomePage() {
         data={carousel}
       />
       <MainActivitiesComponent />
+      <HeadingComponent 
+        heading='Кинезис в Санкт-Петербурге'
+      />
+      <MainPresale />
       <HeadingComponent 
         heading='С чего начать?'
       />
