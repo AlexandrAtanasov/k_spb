@@ -1,5 +1,8 @@
 import { Button, Container } from 'react-bootstrap'
 
+// import Components
+import { ModalPresale } from '../Modal_Presale/Modal_Presale'
+
 // import styles 
 import style_heading from '../../styles/components/HeadingComponent.module.scss'
 import style from '../../styles/components/CardDeckComponent.module.scss'
@@ -10,7 +13,7 @@ export function MainPresaleButton ( ) {
         <div>
             <Container>
                 <Button variant="success" size="lg" block>
-                    Оформить абонемент по предпродаже
+                    <ModalPresale />
                 </Button>
             </Container>
         </div>

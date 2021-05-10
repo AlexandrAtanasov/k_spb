@@ -38,6 +38,10 @@ main {
     margin-bottom: 1rem;
 }
 
+.modal-dialog {
+    max-width: 650px;
+}
+
 // carousel media query
 // TODO: add more media breakpoints
 @media (max-width: 576px) {
