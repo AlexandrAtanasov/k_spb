@@ -8,6 +8,7 @@ import style from '../../styles/components/CardDeckComponent.module.scss'
 
 // import data
 import { presale } from '../../data/main/presale/presale'
+import { presale_headings } from '../../data/main/presale/presale_headings.js'
 
 export function MainPresale( ) {
 
@@ -15,7 +16,7 @@ export function MainPresale( ) {
         <div>
             <Container className={` ${style_heading.heading_container} `}>
                 <h2 className={` ${style_heading.heading} `} >
-                    Центр Кинезис в Санкт-Петербурге открывает предпродажи!
+                    {presale_headings.openPreSale}
                 </h2>
             </Container>
 
@@ -23,7 +24,7 @@ export function MainPresale( ) {
             
             <Container className={` ${style_heading.heading_container} `}>
                 <h3 className={` ${style_heading.heading} `} >
-                    Приходите к нам, чтобы:
+                    {presale_headings.centerHelp}
                 </h3>
             </Container>
 
@@ -41,10 +42,10 @@ export function MainPresale( ) {
                                     key={elem.id}
                                     className={`${style.min_width} ${style.align}`}    
                                 >
-                                    <Card.Img 
+                                    {/* <Card.Img 
                                         variant="top" 
                                         src={elem.img} 
-                                    />
+                                    /> */}
                                     <Card.Body>
                                     <Card.Title>
                                         {elem.title}

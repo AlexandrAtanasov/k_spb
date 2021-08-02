@@ -7,6 +7,7 @@ import style from '../../styles/components/CardDeckComponent.module.scss'
 
 // import data
 import { start_intro } from '../../data/main/start_intro/start_intro'
+import { start_intro_headings } from '../../data/main/start_intro/start_intro_headings.js'
 
 export function MainStartIntro( ) {
 
@@ -14,12 +15,12 @@ export function MainStartIntro( ) {
         <div>
             <Container className={` ${style_heading.heading_container} `}>
                 <h2 className={` ${style_heading.heading} `} >
-                    Запишитесь на консультацию!
+                    {start_intro_headings.call_on_consultation}
                 </h2>
             </Container>
             <Container className={` ${style_heading.heading_container} `}>
                 <h3 className={` ${style_heading.heading} `} >
-                    Этапы консультации:
+                    {start_intro_headings.consultation_steps}
                 </h3>
             </Container>
 
