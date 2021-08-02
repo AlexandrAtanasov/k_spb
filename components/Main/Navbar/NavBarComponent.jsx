@@ -171,7 +171,7 @@ const longMenu = useRef(null);
                                     Правила посещения
                                 </NavDropdown.Item>
                             </Link>
-                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                            {/* <NavDropdown.Divider className={`${style.dropdownDivider} `}  /> */}
                             
                             {/* <Link href={`/methodology`} passHref>
                                 <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>
@@ -187,17 +187,17 @@ const longMenu = useRef(null);
                             </Link>
                             <NavDropdown.Divider className={`${style.dropdownDivider} `}  /> */}
                             
-                            <Link href={`/reviews`} passHref>
+                            {/* <Link href={`/reviews`} passHref>
                                 <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>
                                     Отзывы
                                 </NavDropdown.Item>
-                            </Link>
-                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                            </Link> */}
+                            {/* <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
                             <Link href={`/news`} passHref>
                                 <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>
                                     {local.menu_news}
                                 </NavDropdown.Item>
-                            </Link>
+                            </Link> */}
                         </NavDropdown>
 
 
