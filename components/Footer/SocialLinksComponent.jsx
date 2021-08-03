@@ -19,7 +19,7 @@ export function SocialLinksComponent() {
                 >
                     <Button 
                         as='a' 
-                        href="https://www.instagram.com/kinezis_perm/" 
+                        href="https://instagram.com/kinezis_spb/" 
                         target="_blank" 
                         variant="secondary"
                         className="social_links_color"
@@ -28,7 +28,7 @@ export function SocialLinksComponent() {
                     </Button>
                     <Button 
                         as='a' 
-                        href="https://vk.com/kinezis59" 
+                        href="https://vk.com/club206268927" 
                         target="_blank" 
                         variant="secondary"
                         className="social_links_color"

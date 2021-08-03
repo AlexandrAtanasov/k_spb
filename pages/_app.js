@@ -4,7 +4,7 @@ import NextNprogress from 'nextjs-progressbar';
 
 import Router from "next/router";
 import withYM from "next-ym";
-import FacebookPixel from '../components/FacebookPixel/FacebookPixel'
+// import FacebookPixel from '../components/FacebookPixel/FacebookPixel'
 
 // import styles
 import '../styles/main.scss'
@@ -17,9 +17,9 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <NextNprogress/>
-            <FacebookPixel>
+            {/* <FacebookPixel> */}
                 <Component {...pageProps} />
-            </FacebookPixel>
+            {/* </FacebookPixel> */}
         </>
     )
 }

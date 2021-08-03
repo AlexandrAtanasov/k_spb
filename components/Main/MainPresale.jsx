@@ -38,23 +38,25 @@ export function MainPresale( ) {
                     >
                         {presale.map(elem => {
                             return(
-                                <Card 
-                                    key={elem.id}
-                                    className={`${style.min_width} ${style.align}`}    
-                                >
-                                    {/* <Card.Img 
-                                        variant="top" 
-                                        src={elem.img} 
-                                    /> */}
-                                    <Card.Body>
-                                    <Card.Title>
-                                        {elem.title}
-                                    </Card.Title>
-                                    <ReactMarkdown
-                                        source={elem.text} 
-                                    />
-                                    </Card.Body>
-                                </Card>
+                                elem.active ? 
+                                    <Card 
+                                        key={elem.id}
+                                        className={`${style.min_width} ${style.align}`}    
+                                    >
+                                        {/* <Card.Img 
+                                            variant="top" 
+                                            src={elem.img} 
+                                        /> */}
+                                        <Card.Body>
+                                        <Card.Title>
+                                            {elem.title}
+                                        </Card.Title>
+                                        <ReactMarkdown
+                                            source={elem.text} 
+                                        />
+                                        </Card.Body>
+                                    </Card>
+                                : null
                             )
                         })}
                     </CardDeck>

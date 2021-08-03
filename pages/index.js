@@ -29,7 +29,7 @@ export default function HomePage() {
       />
       <MainPresale />
       <HeadingComponent 
-        heading='С чего начать?'
+        heading='Как проходит лечение'
       />
       <MainStartIntro />
       <MainAdvantages />

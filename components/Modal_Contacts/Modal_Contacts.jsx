@@ -10,7 +10,7 @@ export function ModalContacts() {
 //   const handleClose_telNumbers = () => setShow_telNumbers(false);
 //   const handleShow_telNumbers = () => setShow_telNumbers(true);
   
-  const handecall_call = () => window.open("tel:89117801949","_self");
+  const handecall_call = () => window.open(`tel:${local.contact_number}`,"_self");
 
     return (
         <>

@@ -13,7 +13,7 @@ export function MainStartIntro( ) {
 
     return (
         <div>
-            <Container className={` ${style_heading.heading_container} `}>
+            {/* <Container className={` ${style_heading.heading_container} `}>
                 <h2 className={` ${style_heading.heading} `} >
                     {start_intro_headings.call_on_consultation}
                 </h2>
@@ -22,7 +22,7 @@ export function MainStartIntro( ) {
                 <h3 className={` ${style_heading.heading} `} >
                     {start_intro_headings.consultation_steps}
                 </h3>
-            </Container>
+            </Container> */}
 
             <Card 
                 className={` ${style.margin} `}

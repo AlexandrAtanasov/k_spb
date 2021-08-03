@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { FB_PIXEL_ID } from '../components/FacebookPixel/fpixel'
+// import { FB_PIXEL_ID } from '../components/FacebookPixel/fpixel'
 
 class MyDocument extends Document {
   
@@ -11,10 +11,10 @@ class MyDocument extends Document {
           <meta charSet="UTF-8"/> 
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
-          <script src="//code.jivosite.com/widget.js" data-jv-id="j5UxZwUNyF" async></script>
+          <script src="//code.jivosite.com/widget.js" data-jv-id="JKTGb2t8WT" async></script>
                 
             {/* Global Site Code Pixel - Facebook Pixel */}
-            <script
+            {/* <script
               dangerouslySetInnerHTML={{
                 __html: `
                   !function(f,b,e,v,n,t,s)
@@ -36,7 +36,7 @@ class MyDocument extends Document {
                 style={{ display: 'none' }}
                 src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
               />
-            </noscript>
+            </noscript> */}
         
         
         </Head>
