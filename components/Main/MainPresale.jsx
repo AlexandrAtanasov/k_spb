@@ -43,10 +43,10 @@ export function MainPresale( ) {
                                         key={elem.id}
                                         className={`${style.min_width} ${style.align}`}    
                                     >
-                                        {/* <Card.Img 
+                                        <Card.Img 
                                             variant="top" 
                                             src={elem.img} 
-                                        /> */}
+                                        />
                                         <Card.Body>
                                         <Card.Title>
                                             {elem.title}

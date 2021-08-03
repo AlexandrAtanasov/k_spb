@@ -4,28 +4,28 @@ export const presale = [
       active: true,
       title: 'Улучшить качество жизни',
       text: 'Избавьтесь от боли в спине и суставах, нарушений осанки и плоскостопия, головных болей, усталости и головокружений!',
-      img: '/img/main/presale/presale1.jpg'
+      img: '/img/main/presale/1_Улучшить_качество_жизни_small.jpg'
     },
     {
       id: '2',
       active: true,
       title: 'Восстановить полноценную трудоспособность',
       text: 'Вернуть прочность костям, подвижность суставам, силу мышцам, эластичность связкам.',
-      img: '/img/main/presale/presale2.jpg'
+      img: '/img/main/presale/1_Восстановить_полноценную_трудоспособность_small.JPG'
     },
     {
       id: '3',
       active: true,
       title: 'Реабилитироваться после травм, операций, перенесённых заболеваний',
       text: 'Компрессионных переломов, эндопротезирования суставов, инсультов.',
-      img: '/img/main/presale/presale3.png'
+      img: '/img/main/presale/1_Реабилитироваться_small.JPG'
     },
     {
       id: '4',
       active: true,
       title: 'Снизить вес',
       text: 'Не смотря на сопутствующие заболевания (сахарный диабет, эндокринные нарушения).',
-      img: '/img/main/presale/presale4.png'
+      img: '/img/main/presale/1_Снизить_вес_small.JPG'
     },
     {
       id: '5',
