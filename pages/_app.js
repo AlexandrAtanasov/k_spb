@@ -10,7 +10,9 @@ import withYM from "next-ym";
 import '../styles/main.scss'
 import '../styles/global_colors.scss'
 
-export default withYM("54928126", Router)(MyApp);
+const yandexUser = process.env.NEXT_PUBLIC_YANDEX_USER;
+
+export default withYM(yandexUser, Router)(MyApp);
 
 function MyApp({ Component, pageProps }) {
     

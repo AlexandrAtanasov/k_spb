@@ -42,7 +42,7 @@ const OrderCallForm = () => {
         initialValues: {
             userName: '',
             userNumber: '',
-            userLocation: 'Пользователь не указал адрес!',
+            // userLocation: 'Пользователь не указал адрес!',
         },
         validate,
         onSubmit: values => {
@@ -96,7 +96,7 @@ const OrderCallForm = () => {
                     {/* {local.form_number_info} */}
                 </Form.Text>
             </Form.Group>
-
+{/* 
             <Form.Group controlId="formBasicChoose">
                 <Form.Label>{local.form_location_label}</Form.Label>
                 <Form.Control 
@@ -110,6 +110,7 @@ const OrderCallForm = () => {
                     <option>{local.form_location_options.option_3}</option>
                 </Form.Control>
             </Form.Group>
+             */}
             <div style={{textAlign:'center'}}>
                 <Button className="button_green_color" type="submit">
                     {local.form_button}

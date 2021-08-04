@@ -1,4 +1,4 @@
 export const presale_headings = {
-  "openPreSale": "в Санкт-Петербурге открывает предпродажи!",
+  "openPreSale": "Скоро открытие в Санкт-Петербурге!",
   "centerHelp": "Центр кинезитерапии поможет Вам:"
 } 

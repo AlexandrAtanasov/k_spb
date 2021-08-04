@@ -19,8 +19,8 @@ export const start_intro = [
     },
     {
       id: '4',
-      title: '------',
-      text: 'Массаж, криотерапия.',
-      img: '/img/main/consultation_steps/plan.jpg'
+      title: 'Массаж',
+      text: 'Снятие напряжения в мышцах, улучшение кровообращения, избавление от отечности, стимуляция работы ЦНС, нормализация психоэмоционального состояния.',
+      // img: '/img/main/consultation_steps/plan.jpg'
     }
   ]
