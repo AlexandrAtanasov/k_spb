@@ -21,6 +21,6 @@ export const start_intro = [
       id: '4',
       title: 'Массаж',
       text: 'Снятие напряжения в мышцах, улучшение кровообращения, избавление от отечности, стимуляция работы ЦНС, нормализация психоэмоционального состояния.',
-      // img: '/img/main/consultation_steps/plan.jpg'
+      img: '/img/main/consultation_steps/1_Массаж_small.jpg'
     }
   ]
