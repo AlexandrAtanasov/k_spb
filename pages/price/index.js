@@ -198,7 +198,7 @@ export default function PricePage() {
             </Card>
 
             {/* Individual */}
-            <Card>
+            {/* <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -244,9 +244,9 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-      
+       */}
             {/* Individual at home */}
-            <Card>
+            {/* <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -284,9 +284,9 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-            
+             */}
             {/* Individual rehab */}
-            <Card>
+            {/* <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -324,9 +324,9 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-                            
+                             */}
             {/* Massage */}
-            <Card>
+            {/* <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -367,11 +367,11 @@ export default function PricePage() {
                         </tbody>
                     </Table>
                 </Card.Body>
-            </Card>
+            </Card> */}
 
 
             {/* Kinesitaping */}
-            <Card>
+            {/* <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -413,7 +413,7 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-      
+       */}
         </MainLayout>
     )
 }  
