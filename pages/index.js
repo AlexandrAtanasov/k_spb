@@ -48,11 +48,13 @@ export default function HomePage() {
       <MainDoctorsComponent />
 */}
 
+{/* 
       <HeadingComponent 
         heading='Лицензции и заключения'
       />
       <MainLicensesComponent/>
-      
+*/}
+
      </MainLayout>
   )
 }
