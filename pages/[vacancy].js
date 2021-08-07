@@ -3,6 +3,7 @@ import { CardComponentWithoutHeader } from '../components/CardComponents/CardCom
 import { HeadingComponent } from '../components/Heading/HeadingComponent'
 
 import { local } from '../data/localization_data/pages/vacancy/vacancy'
+import { vacancy_texts } from '../data/pages/vacancy/vacancy_pages_info/vacancy_texts'
 
 import fs from 'fs'
 import path from 'path'
@@ -30,8 +31,13 @@ export async function getStaticProps(context) {
    
     // load markdown
     const pagesTextDirectory = path.join(process.cwd(), '/data/pages/vacancy/vacancy_pages_texts/')
-    const parsedPage = JSON.parse(page)
-    const mdText = fs.readFileSync(pagesTextDirectory + parsedPage.text, 'utf8')
+     const mdText = vacancy_texts.map(elem => {
+        return(
+            elem.active ? (
+                fs.readFileSync(pagesTextDirectory + elem.text, 'utf8')
+            ) : null
+        )
+    })
 
     return {
         props: {
@@ -41,24 +47,31 @@ export async function getStaticProps(context) {
     }
 }
 
-
 export default function VacancyPage ( {page, mdText} ) {
     const data = JSON.parse(page)
     const text = mdText
-   
+
     return (
         <MainLayout
             title={data.title}
-            description={`Description for ${data.id} page`}
+            description={`Вакансии центра кинезитарапии`}
         >
             <HeadingComponent 
                 heading={local.main_layout_title}
             />
-            <CardComponentWithoutHeader
-                // cardHeader={data.header}
-                // cardTitle={data.title}
-                cardText={text}
-            />
+            {text.map(text => {
+                return(
+                    <div 
+                        key={Math.random()}
+                    >
+                        <CardComponentWithoutHeader
+                            // cardHeader={data.header}
+                            // cardTitle={data.title}
+                            cardText={text}
+                        />
+                    </div>
+                )})
+            }
         </MainLayout>
     )
 }
