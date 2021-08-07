@@ -17,7 +17,7 @@ export const local = {
         userNumber_numb: "Номер должен содержать только цифры",
         userEmail_null: "Введите адрес электронной почты",
         userEmail_numb: "Адрес электронной почты должен содержать знак @ и точку: abc@de.ru",
-        userMessage_null: "Укажите, что вы хотите у нас вылечить"
+        userMessage_null: "Укажите ваш диагноз / что вас беспокоит"
     }
 
 

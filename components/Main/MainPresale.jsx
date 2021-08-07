@@ -20,7 +20,7 @@ export function MainPresale( ) {
                 </h2>
             </Container>
 
-            <MainPresaleButton/>
+            {/* <MainPresaleButton/> */}
             
             <Container className={` ${style_heading.heading_container} `}>
                 <h3 className={` ${style_heading.heading} `} >
@@ -64,6 +64,7 @@ export function MainPresale( ) {
             </Card>
             
             <MainPresaleButton/>
+            <br/>
             
         </div>
     )

@@ -1,7 +1,7 @@
 export const advantages = [
     {
       id: 1,
-      text: '3 центра в самых крупных районах Перми',
+      text: 'Четыре центра кинезитерапии в самых крупных районах Санкт-Петербурга и Перми',
       img: '/img/main/advantages/locations.png'
     },
     {

@@ -119,7 +119,53 @@ const longMenu = useRef(null);
                                 Главная страница
                             </Nav.Link>
                         </Link>
-                        
+  
+                        <NavDropdown 
+                            title={local.menu_resolvable} 
+                            id="basic-nav-dropdown"
+                            ref={longMenu}
+                            // onClick={handleClickMakeFixedMenu(longMenu)}
+                            // onClick={handleClickMakeLongMenu}
+                        >
+                            {resolvable_menu.map(menu => {
+                                if (menu.id == 1) {
+                                    return (
+                                        <Link 
+                                            href={`/resolvable/[pid]`} 
+                                            as={`/resolvable/${menu.pid}`} 
+                                            passHref
+                                            key={menu.id}
+                                        >
+                                            <NavDropdown.Item 
+                                                className={`${style.lineHeight} ${style.wordBreak} `}
+                                            >
+                                                {menu.title}
+                                            </NavDropdown.Item>
+                                        </Link>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={menu.id}>
+                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
+                                            <Link 
+                                                href={`/resolvable/[pid]`} 
+                                                as={`/resolvable/${menu.pid}`} 
+                                                passHref
+                                            >
+                                                <NavDropdown.Item
+                                                    className={`${style.lineHeight} ${style.wordBreak} `}
+                                                >
+                                                    <div>
+                                                        {menu.title}
+                                                    </div>
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </NavDropdown>
+                      
                         <NavDropdown 
                             title="Цены и акции" 
                             id="basic-nav-dropdown"
@@ -138,7 +184,7 @@ const longMenu = useRef(null);
                         </NavDropdown>
 
                         <NavDropdown 
-                            title="О нас" 
+                            title="Информация" 
                             id="basic-nav-dropdown"
                         >
                             {/* <Link href={`/persons`} passHref>
@@ -198,53 +244,6 @@ const longMenu = useRef(null);
                                     {local.menu_news}
                                 </NavDropdown.Item>
                             </Link> */}
-                        </NavDropdown>
-
-
-                        <NavDropdown 
-                            title={local.menu_resolvable} 
-                            id="basic-nav-dropdown"
-                            ref={longMenu}
-                            // onClick={handleClickMakeFixedMenu(longMenu)}
-                            // onClick={handleClickMakeLongMenu}
-                        >
-                            {resolvable_menu.map(menu => {
-                                if (menu.id == 1) {
-                                    return (
-                                        <Link 
-                                            href={`/resolvable/[pid]`} 
-                                            as={`/resolvable/${menu.pid}`} 
-                                            passHref
-                                            key={menu.id}
-                                        >
-                                            <NavDropdown.Item 
-                                                className={`${style.lineHeight} ${style.wordBreak} `}
-                                            >
-                                                {menu.title}
-                                            </NavDropdown.Item>
-                                        </Link>
-                                    )
-                                } else {
-                                    return (
-                                        <div key={menu.id}>
-                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
-                                            <Link 
-                                                href={`/resolvable/[pid]`} 
-                                                as={`/resolvable/${menu.pid}`} 
-                                                passHref
-                                            >
-                                                <NavDropdown.Item
-                                                    className={`${style.lineHeight} ${style.wordBreak} `}
-                                                >
-                                                    <div>
-                                                        {menu.title}
-                                                    </div>
-                                                </NavDropdown.Item>
-                                            </Link>
-                                        </div>
-                                    )
-                                }
-                            })}
                         </NavDropdown>
 
                         {/* <NavDropdown title={local.menu_additional} id="basic-nav-dropdown">
