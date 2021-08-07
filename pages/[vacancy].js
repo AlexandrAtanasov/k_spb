@@ -3,7 +3,7 @@ import { CardComponentWithoutHeader } from '../components/CardComponents/CardCom
 import { HeadingComponent } from '../components/Heading/HeadingComponent'
 
 import { local } from '../data/localization_data/pages/vacancy/vacancy'
-import { vacancy_texts } from '../data/pages/vacancy/vacancy_pages_info/vacancy_texts'
+import { vacancy_texts } from '../data/pages/vacancy/vacancy_texts'
 
 import fs from 'fs'
 import path from 'path'
@@ -31,7 +31,7 @@ export async function getStaticProps(context) {
    
     // load markdown
     const pagesTextDirectory = path.join(process.cwd(), '/data/pages/vacancy/vacancy_pages_texts/')
-     const mdText = vacancy_texts.map(elem => {
+    const mdText = vacancy_texts.map(elem => {
         return(
             elem.active ? (
                 fs.readFileSync(pagesTextDirectory + elem.text, 'utf8')
