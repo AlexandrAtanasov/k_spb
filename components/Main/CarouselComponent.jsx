@@ -13,7 +13,19 @@ export function CarouselComponent( {data} ) {
         <Carousel style={{marginTop: '-56px'}}>
             {data.map(img => {
                 return (
-                    <Carousel.Item key={img.id}>
+                    img.text_disable ? (
+                        <Carousel.Item key={img.id}>
+                            <img
+                                className="d-block w-100"
+                                src={`${img.src}`}
+                                alt={img.alt}
+                            />
+                            <Carousel.Caption className="d-flex flex-column h-100 align-items-center justify-content-center">
+                               <MainPresaleButton/>
+                            </Carousel.Caption>
+                        </Carousel.Item>            
+                    ) : (
+                        <Carousel.Item key={img.id}>
                         <img
                             className="d-block w-100"
                             src={`${img.src}`}
@@ -32,7 +44,8 @@ export function CarouselComponent( {data} ) {
                             </p>
                             <MainPresaleButton/>
                         </Carousel.Caption>
-                    </Carousel.Item>            
+                    </Carousel.Item>  
+                    )
                 )
             })}
         </Carousel>
