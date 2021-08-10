@@ -21,7 +21,7 @@ export function MainStartIntro( ) {
             <Container className={` ${style_heading.heading_container} `}>
                 <h3 className={` ${style_heading.heading} `} >
                     {start_intro_headings.consultation_steps}
-                </h3>
+                </h3> 
             </Container> */}
 
             <Card 

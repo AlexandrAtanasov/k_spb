@@ -3,7 +3,6 @@ import { Carousel } from 'react-bootstrap'
 
 import { MainPresaleButton } from '../Main/MainPresaleButton'
 
-
 // import styles
 import style from '../../styles/components/Carousel.module.scss'
 
@@ -20,7 +19,11 @@ export function CarouselComponent( {data} ) {
                                 src={`${img.src}`}
                                 alt={img.alt}
                             />
-                            <Carousel.Caption className="d-flex flex-column h-100 align-items-center justify-content-center">
+                            <Carousel.Caption 
+                                className="d-flex flex-column h-100 align-items-center"
+                                // className=" justify-content-center"
+                                style={{position: 'absolute', transform: 'translateY(51%)!important'}}
+                            >
                                <MainPresaleButton/>
                             </Carousel.Caption>
                         </Carousel.Item>            
