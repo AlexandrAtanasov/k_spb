@@ -26,7 +26,7 @@ const validate = values => {
  
     if (!values.userNumber) {
       errors.userNumber = `${local.errors.userNumber_null}`;
-    } else if (!/^[0-9]+$/i.test(values.userNumber)) {
+    } else if (!/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/i.test(values.userNumber)) {
       errors.userNumber = `${local.errors.userNumber_numb}`;
     }
    
@@ -85,7 +85,7 @@ const OrderCallForm = () => {
     return (
         <Form onSubmit={formik.handleSubmit}>
             
-            <Form.Group controlId="formBasicName">
+            <Form.Group controlId="formLastName">
                 <Form.Label>{local.form_last_name_label}</Form.Label>
                 <Form.Control 
                     type="text"
@@ -98,7 +98,7 @@ const OrderCallForm = () => {
                 </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicName">
+            <Form.Group controlId="formFirstName">
                 <Form.Label>{local.form_first_name_label}</Form.Label>
                 <Form.Control 
                     type="text"
@@ -111,7 +111,7 @@ const OrderCallForm = () => {
                 </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicName">
+            <Form.Group controlId="formPatronymic">
                 <Form.Label>{local.form_patronymic_label}</Form.Label>
                 <Form.Control 
                     type="text"
@@ -139,7 +139,7 @@ const OrderCallForm = () => {
                 </Form.Text>
             </Form.Group>
             
-            <Form.Group controlId="formBasicNumber">
+            <Form.Group controlId="formEmail">
                 <Form.Label>{local.form_email_label}</Form.Label>
                 <Form.Control 
                     type="email" 
@@ -154,7 +154,7 @@ const OrderCallForm = () => {
                 </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicNumber">
+            <Form.Group controlId="formMessage">
                 <Form.Label>{local.form_user_message_label}</Form.Label>
                 <Form.Control 
                     type="text" 

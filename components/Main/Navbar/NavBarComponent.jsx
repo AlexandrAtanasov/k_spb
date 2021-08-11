@@ -187,12 +187,12 @@ const longMenu = useRef(null);
                             title="Информация" 
                             id="basic-nav-dropdown"
                         >
-                            {/* <Link href={`/persons`} passHref>
+                            <Link href={`/persons`} passHref>
                                 <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>
                                     Наша команда
                                 </NavDropdown.Item>
                             </Link>
-                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  /> */}
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
 
                             {/* <Link href={`/radio`} passHref>
                                 <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>

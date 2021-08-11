@@ -7,7 +7,7 @@ import { HeadingComponent } from '../../components/Heading/HeadingComponent'
 // import data
 import { doctors } from '../../data/pages/persons/doctors'
 // import { administrators } from '../../data/pages/persons/administrators'
-import { trainers } from '../../data/pages/persons/trainers'
+// import { trainers } from '../../data/pages/persons/trainers'
 
 // import styles
 import style from '../../styles/pages/contacts_page.module.scss'
@@ -41,13 +41,13 @@ export default function PersonsPage() {
                                 </Nav.Link>
                             </Nav.Item>
                         </Col> */}
-                        <Col lg='auto'>
+                        {/* <Col lg='auto'>
                             <Nav.Item>
                                 <Nav.Link eventKey="third" className={style.button_outline_none}>
                                     Инструкторы
                                 </Nav.Link>
                             </Nav.Item>
-                        </Col>
+                        </Col> */}
                     </Nav>
                 </Row>
 
@@ -64,11 +64,11 @@ export default function PersonsPage() {
                                     data={administrators}
                                 />
                             </Tab.Pane> */}
-                            <Tab.Pane eventKey="third">
+                            {/* <Tab.Pane eventKey="third">
                                 <CardComponentDeck 
                                     data={trainers}
                                 />
-                            </Tab.Pane>
+                            </Tab.Pane> */}
                         </Tab.Content>
                     </Col>
                 </Row>
