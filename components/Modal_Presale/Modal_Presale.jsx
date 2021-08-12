@@ -6,6 +6,9 @@ import ReactMarkdown from "react-markdown";
 // import data
 import { personal_data_policy } from '../../data/personal_data_policy/personal_data_policy'
 import { local } from '../../data/localization_data/components/Modal_Presale/Modal_Presale'
+// import { kassa } from './kassa.html'
+
+import {createMarkup} from './kassa'
 
 export function ModalPresale() {
 
@@ -31,10 +34,14 @@ export function ModalPresale() {
                 {local.modal_header_title}
               </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            
+            {/* <Modal.Body>
               <OrderCallForm />
-            </Modal.Body>
-            <Modal.Footer>
+            </Modal.Body> */}
+
+            {/* <Modal.Footer> */}
+
+
               {/* <Button 
                 onClick={handleClose_presale}
                 variant="secondary" 
@@ -42,10 +49,14 @@ export function ModalPresale() {
                 Close
               </Button>
               <Button onClick={handleU_presale} variant="success">Understood</Button> */}
-              <ReactMarkdown
+              {/* <ReactMarkdown
                 source={personal_data_policy[0].text} 
-              />
-            </Modal.Footer>
+              /> */}
+            {/* </Modal.Footer> */}
+            <div dangerouslySetInnerHTML={createMarkup()} />
+            
+            <br/>
+            <br/>
           </Modal>
         </>
     )
