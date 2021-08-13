@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002F[vacancy]","\u002Fresolvable\u002F[pid]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

@@ -3,6 +3,7 @@ import { Button, Modal } from 'react-bootstrap'
 import OrderCallForm  from './Form_Presale'
 import ReactMarkdown from "react-markdown";
 
+
 // import data
 import { personal_data_policy } from '../../data/personal_data_policy/personal_data_policy'
 import { local } from '../../data/localization_data/components/Modal_Presale/Modal_Presale'
@@ -53,10 +54,12 @@ export function ModalPresale() {
                 source={personal_data_policy[0].text} 
               /> */}
             {/* </Modal.Footer> */}
+
             <div dangerouslySetInnerHTML={createMarkup()} />
             
             <br/>
             <br/>
+
           </Modal>
         </>
     )

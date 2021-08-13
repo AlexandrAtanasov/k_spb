@@ -22,10 +22,14 @@ export function createMarkup() {
                 <input value="" type="hidden" name="ym_merchant_receipt">
                 <div class="ym-customer-info">
                     <div class="ym-block-title">О покупателе</div>
-                    <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">
-                    <input name="cps_phone" class="ym-input" placeholder="Телефон" type="text" value="">
-                    <input name="custName" class="ym-input" placeholder="ФИО" type="text" value="">
-                    <textarea class="ym-textarea" name="orderDetails" placeholder="Комментарий" value=""></textarea>
+                    <label style="margin-top:0.5rem;margin-bottom:0;">Email</label>
+                    <input name="cps_email" required="true" pattern=".+@.+\..+" class="ym-input" placeholder="email@email.ru" type="text" value="">
+                    <label style="margin-top:0.5rem;margin-bottom:0;">Телефон</label>
+                    <input name="cps_phone" required="true" pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}" class="ym-input" placeholder="+71234567890" type="text" value="">
+                    <label style="margin-top:0.5rem;margin-bottom:0;">ФИО</label>
+                    <input name="custName" required="true" class="ym-input" placeholder="Иванов Иван Иванович" type="text" value="">
+                    <label style="margin-top:0.5rem;margin-bottom:0;">Комментарий</label>
+                    <textarea class="ym-textarea" name="orderDetails" placeholder="Укажите ваш диагноз / что вас беспокоит" value=""></textarea>
                 </div>
                 <div class="ym-hidden-inputs"></div>
                 <input name="customerNumber" type="hidden" value="Тестовая оплата за курс кинезитерапии">
