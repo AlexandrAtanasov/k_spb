@@ -1,4 +1,4 @@
-export function createMarkup() {
+export function createMarkup_test() {
     return {__html: `
         <div>
             <br>
@@ -23,9 +23,9 @@ export function createMarkup() {
                 <div class="ym-customer-info">
                     <div class="ym-block-title">О покупателе</div>
                     <label style="margin-top:0.5rem;margin-bottom:0;">Email</label>
-                    <input name="cps_email" required="true" pattern=".+@.+\..+" class="ym-input" placeholder="email@email.ru" type="text" value="">
+                    <input name="cps_email" required="true" pattern=".+@.+\..+" class="ym-input" placeholder="email@email.ru" type="email" value="">
                     <label style="margin-top:0.5rem;margin-bottom:0;">Телефон</label>
-                    <input name="cps_phone" required="true" pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}" class="ym-input" placeholder="+71234567890" type="text" value="">
+                    <input name="cps_phone" required="true" class="ym-input" placeholder="+71234567890" type="tel" value="">
                     <label style="margin-top:0.5rem;margin-bottom:0;">ФИО</label>
                     <input name="custName" required="true" class="ym-input" placeholder="Иванов Иван Иванович" type="text" value="">
                     <label style="margin-top:0.5rem;margin-bottom:0;">Комментарий</label>
