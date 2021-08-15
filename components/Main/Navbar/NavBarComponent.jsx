@@ -292,7 +292,7 @@ const longMenu = useRef(null);
 
                         <Link href={'https://kinezis59.ru/'} passHref>
                             <Nav.Link>
-                                Кинезис Перми
+                                Кинезис в Перми
                             </Nav.Link>
                         </Link>
                     
