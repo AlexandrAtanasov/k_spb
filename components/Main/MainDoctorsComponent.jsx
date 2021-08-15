@@ -2,7 +2,7 @@ import { CardComponentDeck } from '../CardComponents/CardComponentDeck'
 
 // import data
 // import { doctors } from '../../data/main/doctors/doctors'
-import { doctors } from '../../data/pages/persons/doctors'
+// import { doctors } from '../../data/pages/persons/doctors'
 
 export function MainDoctorsComponent( ) {
 
