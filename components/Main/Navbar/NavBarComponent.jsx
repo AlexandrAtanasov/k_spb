@@ -289,6 +289,12 @@ const longMenu = useRef(null);
                                 </NavDropdown.Item>
                             </Link>
                         </NavDropdown>
+
+                        <Link href={'https://kinezis59.ru/'} passHref>
+                            <Nav.Link>
+                                Кинезис Перми
+                            </Nav.Link>
+                        </Link>
                     
                     </Nav>
                 </Navbar.Collapse>
