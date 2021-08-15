@@ -26,7 +26,7 @@ export function SocialLinksComponent() {
                     >
                         <i className="fab fa-instagram"></i>
                     </Button>
-                    <Button 
+                    {/* <Button 
                         as='a' 
                         href="https://vk.com/club206268927" 
                         target="_blank" 
@@ -34,6 +34,15 @@ export function SocialLinksComponent() {
                         className="social_links_color"
                     >
                         <i className="fab fa-vk"></i>
+                    </Button> */}
+                    <Button 
+                        as='a' 
+                        href="https://t.me/kinezis78" 
+                        target="_blank" 
+                        variant="secondary"
+                        className="social_links_color"
+                    >
+                        <i className="fab fa-telegram"></i>
                     </Button>
                     {/* <Button 
                         as='a' 
