@@ -9,8 +9,8 @@ import { personal_data_policy } from '../../data/personal_data_policy/personal_d
 import { local } from '../../data/localization_data/components/Modal_Presale/Modal_Presale'
 // import { kassa } from './kassa.html'
 
-// import {createMarkup_test} from './kassa_test'
-import {createMarkup_prod} from './kassa_prod'
+import {createMarkup_test} from './kassa_test'
+// import {createMarkup_prod} from './kassa_prod'
 
 export function ModalPresale() {
 
@@ -56,8 +56,8 @@ export function ModalPresale() {
               /> */}
             {/* </Modal.Footer> */}
 
-            {/* <div dangerouslySetInnerHTML={createMarkup_test()} /> */}
-            <div dangerouslySetInnerHTML={createMarkup_prod()} />
+            <div dangerouslySetInnerHTML={createMarkup_test()} />
+            {/* <div dangerouslySetInnerHTML={createMarkup_prod()} /> */}
             
             <br/>
             <br/>
