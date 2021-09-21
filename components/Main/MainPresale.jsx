@@ -14,18 +14,18 @@ export function MainPresale( ) {
 
     return (
         <div>
-            <Container className={` ${style_heading.heading_container} `}>
+            {/* <Container className={` ${style_heading.heading_container} `}>
                 <h2 className={` ${style_heading.heading} `} >
                     {presale_headings.openPreSale}
                 </h2>
-            </Container>
+            </Container> */}
 
             {/* <MainPresaleButton/> */}
             
             <Container className={` ${style_heading.heading_container} `}>
-                <h3 className={` ${style_heading.heading} `} >
+                <h2 className={` ${style_heading.heading} `} >
                     {presale_headings.centerHelp}
-                </h3>
+                </h2>
             </Container>
 
             <Card 

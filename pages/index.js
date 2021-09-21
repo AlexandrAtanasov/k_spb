@@ -25,7 +25,7 @@ export default function HomePage() {
       />
       <MainActivitiesComponent />
       <HeadingComponent 
-        heading='Центр кинезитерапии'
+        heading='Центр кинезитерапии в Санкт-Петербурге'
       />
       <MainPresale />
       <HeadingComponent 
