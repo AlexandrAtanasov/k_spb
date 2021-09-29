@@ -325,7 +325,7 @@ export default function PricePage() {
                 </Card.Body>
             </Card>
                              */}
-            Massage
+            {/* Massage */}
             <Card>
                 <Card.Header
                     className={` card_component_header `}
