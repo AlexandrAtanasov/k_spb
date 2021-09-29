@@ -325,8 +325,8 @@ export default function PricePage() {
                 </Card.Body>
             </Card>
                              */}
-            {/* Massage */}
-            {/* <Card>
+            Massage
+            <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -367,7 +367,7 @@ export default function PricePage() {
                         </tbody>
                     </Table>
                 </Card.Body>
-            </Card> */}
+            </Card>
 
 
             {/* Kinesitaping */}
