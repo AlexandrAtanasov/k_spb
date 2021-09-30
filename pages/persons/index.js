@@ -5,7 +5,7 @@ import { CardComponentDeck } from '../../components/CardComponents/CardComponent
 import { HeadingComponent } from '../../components/Heading/HeadingComponent'
 
 // import data
-import { doctors } from '../../data/pages/persons/spb/doctors'
+import { spb_persons } from '../../data/pages/persons/spb/spb_persons.js'
 import { doctors_perm } from '../../data/pages/persons/perm/doctors_perm'
 // import { administrators } from '../../data/pages/persons/administrators'
 // import { trainers } from '../../data/pages/persons/trainers'
@@ -63,7 +63,7 @@ export default function PersonsPage() {
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
                                 <CardComponentDeck 
-                                    data={doctors}
+                                    data={spb_persons}
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
