@@ -11,7 +11,7 @@ export const resolvable_menu = [
     { id: 10, title:"Реабилитация после инсульта", pid: 'reabilitaciya-posle-insulta' },
     { id: 11, title:"Профилактика избыточного веса", pid: 'profilaktika-izbytochnogo-vesa' },
     { id: 12, title:"Программы для детей", pid: 'programmy-dlya-detej' },
-    // { id: 13, title:"Восстановление после компрессионных переломов", pid: 'vosstanovlenie-posle-kompressionnyh-perelomov' },
+    { id: 13, title:"Восстановление после компрессионных переломов", pid: 'vosstanovlenie-posle-kompressionnyh-perelomov' },
     { id: 14, title:"Реабилитация после эндопротезирования", pid: 'reabilitaciya-posle-endoprotezirovaniya' },	
     { id: 15, title:"Женское здоровье", pid: 'zhenskoe-zdorovie' },
     { id: 16, title:"Мужское здоровье", pid: 'muzhskoe-zdorovie' },
