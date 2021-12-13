@@ -33,6 +33,8 @@ $color: #8ab549;;
     // line-height: 0.8rem;
 }
 
+
+
 // carousel media query
 @media (max-width: 576px) {
     .wordBreak {
@@ -60,11 +62,20 @@ $color: #8ab549;;
     .fixedTop {
         overflow-y: scroll;
     }
+    .left_sub {
+        padding-left: 1.5rem;
+    }
+    .submenu_margin {
+        margin-right: 0.5rem;
+    }
 }
 // Средние девайсы («таблетки», >= 768px)
 @media (min-width: 768px) {
     .fixedTop {
         overflow-y: scroll;
+    }
+    .left_sub {
+        padding-left: 1.5rem;
     }
 }
 // Большие девайсы (десктопы, >= 992px)
@@ -72,10 +83,16 @@ $color: #8ab549;;
     .fixedTop {
         overflow-y: visible;
     }
+    .left_sub {
+        padding-left: 1rem;
+    }
 }
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {
     .fixedTop {
         overflow-y: visible;
+    }
+    .left_sub {
+        padding-left: 1rem;
     }
 }
