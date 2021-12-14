@@ -133,7 +133,7 @@ const longMenu = useRef(null);
                             // onClick={handleClickMakeFixedMenu(longMenu)}
                             // onClick={handleClickMakeLongMenu}
                         >
-                            <NavDropdown 
+                            {/* <NavDropdown 
                                 title="Суставы" 
                                 id="basic-nav-dropdown"
                                 className={`${style.left_sub} ${style.submenu_margin}`}
@@ -351,7 +351,8 @@ const longMenu = useRef(null);
                                         )
                                     }
                                 })}
-                            </NavDropdown>
+                            </NavDropdown> 
+                            */}
 
                             {resolvable_menu.map(menu => {
                                 if (menu.id == 1) {
