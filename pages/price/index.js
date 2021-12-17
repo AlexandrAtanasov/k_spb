@@ -26,8 +26,10 @@ import { price_individual_home_info } from '../../data/pages/price/price_individ
 import { price_individual_rehab } from '../../data/pages/price/price_individual_rehab/price_individual_rehab.js'
 import { price_individual_rehab_info } from '../../data/pages/price/price_individual_rehab/price_individual_rehab_info.js'
 // import data - price massage
-import { price_massage } from '../../data/pages/price/price_massage/price_massage.js'
-import { price_massage_info } from '../../data/pages/price/price_massage/price_massage_info.js'
+import { price_massage_bogdanova } from '../../data/pages/price/price_massage/price_massage_bogdanova.js'
+import { price_massage_bogdanova_info } from '../../data/pages/price/price_massage/price_massage_bogdanova_info.js'
+import { price_massage_stupakov } from '../../data/pages/price/price_massage/price_massage_stupakov.js'
+import { price_massage_stupakov_info } from '../../data/pages/price/price_massage/price_massage_stupakov_info.js'
 // import data - price kinesitaping
 import { price_kinesitaping } from '../../data/pages/price/price_kinesitaping/price_kinesitaping.js'
 import { price_kinesitaping_info } from '../../data/pages/price/price_kinesitaping/price_kinesitaping_info.js'
@@ -246,7 +248,7 @@ export default function PricePage() {
             </Card>
        */}
             {/* Individual at home */}
-            {/* <Card>
+            <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -260,6 +262,7 @@ export default function PricePage() {
                         <thead>
                             <tr>
                                 <th>Услуга</th>
+                                <th>Продолжительность</th>
                                 <th>Стоимость, рублей</th>
                             </tr>
                         </thead>
@@ -273,6 +276,9 @@ export default function PricePage() {
                                                     {elem.id}
                                                 </td>
                                                 <td>
+                                                    {elem.duration}
+                                                </td>
+                                                <td>
                                                     {elem.cost}
                                                 </td>
                                             </tr>
@@ -284,7 +290,7 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-             */}
+            
             {/* Individual rehab */}
             {/* <Card>
                 <Card.Header
@@ -325,28 +331,30 @@ export default function PricePage() {
                 </Card.Body>
             </Card>
                              */}
-            {/* Massage */}
+            {/* Massage Bogdanova */}
             <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
-                    {price_massage_info.header}
+                    {price_massage_bogdanova_info.header}
                 </Card.Header>
                 <Card.Body>
                     <Card.Text>
-                        {price_massage_info.text}
+                        {price_massage_bogdanova_info.text}
                     </Card.Text>
                     <Table responsive>
                         <thead>
                             <tr>
                                 <th>Продолжительность, минут</th>
-                                <th>Стоимость, рублей</th>
-                                <th>Стоимость для пациентов центра, рублей</th>
+                                <th>Развовое посещение, рублей</th>
+                                <th>Развовое посещение для пациентов центра Кинезис, рублей</th>
+                                <th>Абонементы со скидкой 10%, рублей</th>
+                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th>
                             </tr>
                         </thead>
                         <tbody>
                             {
-                                price_massage.map( elem => {
+                                price_massage_bogdanova.map( elem => {
                                     return (
                                         <>
                                             <tr key={elem.id}>
@@ -357,7 +365,13 @@ export default function PricePage() {
                                                     {elem.cost}
                                                 </td>
                                                 <td>
-                                                    {elem.cost_club}
+                                                    {elem.cost_k}
+                                                </td>
+                                                <td>
+                                                    {elem.abon_10}
+                                                </td>
+                                                <td>
+                                                    {elem.abon_10_k}
                                                 </td>
                                             </tr>
                                         </>
@@ -368,7 +382,57 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-
+            {/* Massage Stupakov */}
+            <Card>
+                <Card.Header
+                    className={` card_component_header `}
+                >
+                    {price_massage_stupakov_info.header}
+                </Card.Header>
+                <Card.Body>
+                    <Card.Text>
+                        {price_massage_stupakov_info.text}
+                    </Card.Text>
+                    <Table responsive>
+                        <thead>
+                            <tr>
+                                <th>Продолжительность, минут</th>
+                                <th>Развовое посещение, рублей</th>
+                                <th>Развовое посещение для пациентов центра Кинезис, рублей</th>
+                                <th>Абонементы со скидкой 10%, рублей</th>
+                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                price_massage_stupakov.map( elem => {
+                                    return (
+                                        <>
+                                            <tr key={elem.id}>
+                                                <td>
+                                                    {elem.duration}
+                                                </td>
+                                                <td>
+                                                    {elem.cost}
+                                                </td>
+                                                <td>
+                                                    {elem.cost_k}
+                                                </td>
+                                                <td>
+                                                    {elem.abon_10}
+                                                </td>
+                                                <td>
+                                                    {elem.abon_10_k}
+                                                </td>
+                                            </tr>
+                                        </>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </Table>
+                </Card.Body>
+            </Card>
 
             {/* Kinesitaping */}
             {/* <Card>
