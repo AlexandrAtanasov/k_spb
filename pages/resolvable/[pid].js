@@ -45,19 +45,35 @@ export default function ResolvablePage ( {page, mdText} ) {
     const text = mdText
     
     return (
-        <MainLayout
-            title={data.title}
-            description={data.description}
-        >
-            <HeadingComponent 
-                heading='Что мы лечим'
-            />
-            <CardComponentWithoutHeader
-                // cardHeader={data.header}
-                // cardTitle={data.title}
-                cardText={text}
-                cardImg={data.img}
-            />
-        </MainLayout>
+        data.img ? (
+            <MainLayout
+                title={data.title}
+                description={data.description}
+            >
+                <HeadingComponent 
+                    heading='Что мы лечим'
+                />
+                <CardComponentWithoutHeader
+                    // cardHeader={data.header}
+                    // cardTitle={data.title}
+                    cardText={text}
+                    cardImg={data.img}
+                />
+            </MainLayout>
+        ) : (
+            <MainLayout
+                title={data.title}
+                description={data.description}
+            >
+                <HeadingComponent 
+                    heading='Что мы лечим'
+                />
+                <CardComponentWithoutHeader
+                    // cardHeader={data.header}
+                    // cardTitle={data.title}
+                    cardText={text}
+                />
+            </MainLayout>            
+        )
     )
 }
