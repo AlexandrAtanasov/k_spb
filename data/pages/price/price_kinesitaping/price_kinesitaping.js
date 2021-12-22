@@ -1,7 +1,17 @@
-export const price_kinesitaping = [
+export const price_kinesitaping = [ 
     {
-      "duration": "1 зона (50 см)", 
-      "cost": "550" ,
-      "cost_club": "500" 
+      "category": "1", 
+      "duration": "30" ,
+      "cost": "700" 
+    },
+    {
+      "category": "2", 
+      "duration": "30" ,
+      "cost": "1000" 
+    },
+    {
+      "category": "3", 
+      "duration": "30" ,
+      "cost": "1500" 
     }
 ]

@@ -113,7 +113,9 @@ export default function PricePage() {
                                 <th>Количество занятий</th>
                                 <th>Срок действия</th>
                                 <th>Продолжительность занятия</th>
-                                <th>Стоимость, рублей</th>
+                                <th>Стоимость - стандарт, рублей</th>
+                                <th>Стоимость - персонально с инструктором-методистом, рублей</th>
+                                <th>Стоимость - персонально персонально с врачом, рублей</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -136,6 +138,12 @@ export default function PricePage() {
                                                 </td>
                                                 <td>
                                                     {elem.cost}
+                                                </td>
+                                                <td>
+                                                    {elem.cost_personal}
+                                                </td>
+                                                <td>
+                                                    {elem.cost_doctor}
                                                 </td>
                                             </tr>
                                         </>
@@ -166,6 +174,8 @@ export default function PricePage() {
                                 <th>Срок действия</th>
                                 <th>Продолжительность занятия</th>
                                 <th>Стоимость, рублей</th>
+                                <th>Стоимость - персонально с инструктором-методистом, рублей</th>
+                                <th>Стоимость - персонально персонально с врачом, рублей</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -188,6 +198,12 @@ export default function PricePage() {
                                                 </td>
                                                 <td>
                                                     {elem.cost}
+                                                </td>
+                                                <td>
+                                                    {elem.cost_personal}
+                                                </td>
+                                                <td>
+                                                    {elem.cost_doctor}
                                                 </td>
                                             </tr>
                                         </>
@@ -346,10 +362,10 @@ export default function PricePage() {
                         <thead>
                             <tr>
                                 <th>Продолжительность, минут</th>
-                                <th>Развовое посещение, рублей</th>
-                                <th>Развовое посещение для пациентов центра Кинезис, рублей</th>
-                                <th>Абонементы со скидкой 10%, рублей</th>
-                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th>
+                                <th>Разовое посещение, рублей</th>
+                                <th>Разовое посещение для пациентов центра Кинезис, рублей</th>
+                                {/* <th>Абонементы со скидкой 10%, рублей</th>
+                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th> */}
                             </tr>
                         </thead>
                         <tbody>
@@ -367,12 +383,12 @@ export default function PricePage() {
                                                 <td>
                                                     {elem.cost_k}
                                                 </td>
-                                                <td>
+                                                {/* <td>
                                                     {elem.abon_10}
                                                 </td>
                                                 <td>
                                                     {elem.abon_10_k}
-                                                </td>
+                                                </td> */}
                                             </tr>
                                         </>
                                     )
@@ -397,10 +413,10 @@ export default function PricePage() {
                         <thead>
                             <tr>
                                 <th>Продолжительность, минут</th>
-                                <th>Развовое посещение, рублей</th>
-                                <th>Развовое посещение для пациентов центра Кинезис, рублей</th>
-                                <th>Абонементы со скидкой 10%, рублей</th>
-                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th>
+                                <th>Разовое посещение, рублей</th>
+                                <th>Разовое посещение для пациентов центра Кинезис, рублей</th>
+                                {/* <th>Абонементы со скидкой 10%, рублей</th>
+                                <th>Абонементы со скидкой 10% для пациентов центра Кинезис, рублей</th> */}
                             </tr>
                         </thead>
                         <tbody>
@@ -418,12 +434,12 @@ export default function PricePage() {
                                                 <td>
                                                     {elem.cost_k}
                                                 </td>
-                                                <td>
+                                                {/* <td>
                                                     {elem.abon_10}
                                                 </td>
                                                 <td>
                                                     {elem.abon_10_k}
-                                                </td>
+                                                </td> */}
                                             </tr>
                                         </>
                                     )
@@ -435,7 +451,7 @@ export default function PricePage() {
             </Card>
 
             {/* Kinesitaping */}
-            {/* <Card>
+            <Card>
                 <Card.Header
                     className={` card_component_header `}
                 >
@@ -448,9 +464,9 @@ export default function PricePage() {
                     <Table responsive>
                         <thead>
                             <tr>
-                                <th>Спецификация</th>
+                                <th>Категория</th>
+                                <th>Продолжительность, минут</th>
                                 <th>Стоимость, рублей</th>
-                                <th>Стоимость для клиентов центра, рублей</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -460,13 +476,13 @@ export default function PricePage() {
                                         <>
                                             <tr key={elem.id}>
                                                 <td>
+                                                    {elem.category}
+                                                </td>
+                                                <td>
                                                     {elem.duration}
                                                 </td>
                                                 <td>
                                                     {elem.cost}
-                                                </td>
-                                                <td>
-                                                    {elem.cost_club}
                                                 </td>
                                             </tr>
                                         </>
@@ -477,7 +493,7 @@ export default function PricePage() {
                     </Table>
                 </Card.Body>
             </Card>
-       */}
+      
         </MainLayout>
     )
 }  
