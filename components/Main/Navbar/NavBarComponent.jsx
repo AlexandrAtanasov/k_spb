@@ -516,13 +516,14 @@ const longMenu = useRef(null);
                                     {local.menu_how_to_find_us}
                                 </NavDropdown.Item>
                             </Link>
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                            <Link href={'https://kinezis59.ru/'} passHref>
+                                <NavDropdown.Item className={`${style.lineHeight} ${style.wordBreak} `}>
+                                    Кинезис в Перми
+                                </NavDropdown.Item>
+                            </Link>
                         </NavDropdown>
 
-                        <Link href={'https://kinezis59.ru/'} passHref>
-                            <Nav.Link>
-                                Кинезис в Перми
-                            </Nav.Link>
-                        </Link>
                     
                     </Nav>
                 </Navbar.Collapse>

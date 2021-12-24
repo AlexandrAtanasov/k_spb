@@ -1,7 +1,8 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Button, Container, Carousel } from 'react-bootstrap'
 
 import { MainPresaleButton } from '../Main/MainPresaleButton'
+import { CallbackButton } from '../Modal_Callback/MainCallbackButton'
 
 // import styles
 import style from '../../styles/components/Carousel.module.scss'
@@ -24,7 +25,12 @@ export function CarouselComponent( {data} ) {
                                 // className=" justify-content-center"
                                 style={{position: 'absolute', transform: 'translateY(51%)!important'}}
                             >
-                               <MainPresaleButton/>
+                                {/* Кнопка переъода к оплате */}
+                                {/* <MainPresaleButton/> */}
+                                
+                                {/* Кнопка заказаобратного звонка */}
+                                <CallbackButton />
+
                             </Carousel.Caption>
                         </Carousel.Item>            
                     ) : (
