@@ -20,7 +20,7 @@ const validate = values => {
  
     if (!values.userNumber) {
       errors.userNumber = `${local.errors.userNumber_null}`;
-    } else if (!/^[0-9]+$/i.test(values.userNumber)) {
+    } else if (!/^[+]?[0-9]+$/i.test(values.userNumber)) {
       errors.userNumber = `${local.errors.userNumber_numb}`;
     }
 
