@@ -1,6 +1,6 @@
 export const cardiovascular_menu = [
     { id: 1, title:"Гипертония", pid: 'hypertension' },
-    { id: 2, title:"Реабилитация после инсульта", pid: 'reabilitaciya-posle-insulta' },
+    { id: 2, title:"Инсульт", pid: 'reabilitaciya-posle-insulta' },
     { id: 3, title:"Инфаркт", pid: 'heartattack' },
     { id: 4, title:"Легочная эмболия", pid: 'pulmonaryembolism' },
     { id: 5, title:"Атеросклероз", pid: 'atherosclerosis' },
