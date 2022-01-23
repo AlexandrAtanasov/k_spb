@@ -13,12 +13,18 @@ import useDocumentScrollThrottled from './useDocumentScrollThrottled'
 import {local} from '../../../data/localization_data/components/Main/Navbar/Navbar'
 import {resolvable_menu} from '../../../data/pages/resolvable/resolvable_menu'
 import {additional_menu} from '../../../data/pages/additional/additional_menu'
+
 // import menu
 import {joints_menu} from '../../../data/menu/joints/joints_menu'
 import {spine_menu} from '../../../data/menu/spine/spine_menu'
 import {cardiovascular_menu} from '../../../data/menu/cardiovascular/cardiovascular_menu'
 import {respiratory_menu} from '../../../data/menu/respiratory/respiratory_menu'
+import {other_menu} from '../../../data/menu/other/other_menu'
 import {neurological_menu} from '../../../data/menu/neurological/neurological_menu'
+//
+import {rehabilitation_menu} from '../../../data/menu/rehabilitation/rehabilitation_menu'
+import {children_menu} from '../../../data/menu/children/children_menu'
+import {for_pregnant_menu} from '../../../data/menu/pregnant/for_pregnant_menu'
 
 // import styles
 import style from '../../../styles/components/NavBarComponent.module.scss'
@@ -126,6 +132,7 @@ const longMenu = useRef(null);
                             </Nav.Link>
                         </Link>
   
+                        {/* Что мы лечим */}
                         <NavDropdown 
                             title={local.menu_resolvable} 
                             id="basic-nav-dropdown"
@@ -133,7 +140,7 @@ const longMenu = useRef(null);
                             // onClick={handleClickMakeFixedMenu(longMenu)}
                             // onClick={handleClickMakeLongMenu}
                         >
-                            {/* <NavDropdown 
+                            <NavDropdown 
                                 title="Суставы" 
                                 id="basic-nav-dropdown"
                                 className={`${style.left_sub} ${style.submenu_margin}`}
@@ -176,7 +183,9 @@ const longMenu = useRef(null);
                                     }
                                 })}
                             </NavDropdown>
-
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                            
+                            {/* Позвоночник */}
                             <NavDropdown 
                                 title="Позвоночник" 
                                 id="basic-nav-dropdown"
@@ -220,7 +229,9 @@ const longMenu = useRef(null);
                                     }
                                 })}
                             </NavDropdown>
-
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                         
+                            {/* Сердечно-сосудистые заболевания */}
                             <NavDropdown 
                                 title="Сердечно-сосудистые заболевания" 
                                 id="basic-nav-dropdown"
@@ -264,7 +275,9 @@ const longMenu = useRef(null);
                                     }
                                 })}
                             </NavDropdown> 
-
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+                            
+                            {/* Заболевания органов дыхания */}
                             <NavDropdown 
                                 title="Заболевания органов дыхания" 
                                 id="basic-nav-dropdown"
@@ -308,7 +321,49 @@ const longMenu = useRef(null);
                                     }
                                 })}
                             </NavDropdown>
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
 
+
+                            {other_menu.map(menu => {
+                                if (menu.id == 1) {
+                                    return (
+                                        <Link 
+                                            href={`/resolvable/[pid]`} 
+                                            as={`/resolvable/${menu.pid}`} 
+                                            passHref
+                                            key={menu.id}
+                                        >
+                                            <NavDropdown.Item 
+                                                className={`${style.lineHeight} ${style.wordBreak} `}
+                                            >
+                                                {menu.title}
+                                            </NavDropdown.Item>
+                                        </Link>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={menu.id}>
+                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
+                                            <Link 
+                                                href={`/resolvable/[pid]`} 
+                                                as={`/resolvable/${menu.pid}`} 
+                                                passHref
+                                            >
+                                                <NavDropdown.Item
+                                                    className={`${style.lineHeight} ${style.wordBreak} `}
+                                                >
+                                                    <div>
+                                                        {menu.title}
+                                                    </div>
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                            <NavDropdown.Divider className={`${style.dropdownDivider} `}  />
+
+                            {/* Невролгические заболевания */}
                             <NavDropdown 
                                 title="Неврологические заболевания" 
                                 id="basic-nav-dropdown"
@@ -351,9 +406,9 @@ const longMenu = useRef(null);
                                         )
                                     }
                                 })}
-                            </NavDropdown> 
-                            */}
-
+                            </NavDropdown>
+                           
+{/* 
                             {resolvable_menu.map(menu => {
                                 if (menu.id == 1) {
                                     return (
@@ -391,8 +446,148 @@ const longMenu = useRef(null);
                                     )
                                 }
                             })}
+                             */}
+
                         </NavDropdown>
-                      
+                        {/* Реабилитация после */}
+                        <NavDropdown 
+                            title='Реабилитация после' 
+                            id="basic-nav-dropdown"
+                            ref={longMenu}
+                            // onClick={handleClickMakeFixedMenu(longMenu)}
+                            // onClick={handleClickMakeLongMenu}
+                        >
+                            {rehabilitation_menu.map(menu => {
+                                if (menu.id == 1) {
+                                    return (
+                                        <Link 
+                                            href={`/resolvable/[pid]`} 
+                                            as={`/resolvable/${menu.pid}`} 
+                                            passHref
+                                            key={menu.id}
+                                        >
+                                            <NavDropdown.Item 
+                                                className={`${style.lineHeight} ${style.wordBreak} `}
+                                            >
+                                                {menu.title}
+                                            </NavDropdown.Item>
+                                        </Link>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={menu.id}>
+                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
+                                            <Link 
+                                                href={`/resolvable/[pid]`} 
+                                                as={`/resolvable/${menu.pid}`} 
+                                                passHref
+                                            >
+                                                <NavDropdown.Item
+                                                    className={`${style.lineHeight} ${style.wordBreak} `}
+                                                >
+                                                    <div>
+                                                        {menu.title}
+                                                    </div>
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </NavDropdown>
+                        {/* Для детей */}
+                        <NavDropdown 
+                            title='Для детей' 
+                            id="basic-nav-dropdown"
+                            ref={longMenu}
+                            // onClick={handleClickMakeFixedMenu(longMenu)}
+                            // onClick={handleClickMakeLongMenu}
+                        >
+                            {children_menu.map(menu => {
+                                if (menu.id == 1) {
+                                    return (
+                                        <Link 
+                                            href={`/resolvable/[pid]`} 
+                                            as={`/resolvable/${menu.pid}`} 
+                                            passHref
+                                            key={menu.id}
+                                        >
+                                            <NavDropdown.Item 
+                                                className={`${style.lineHeight} ${style.wordBreak} `}
+                                            >
+                                                {menu.title}
+                                            </NavDropdown.Item>
+                                        </Link>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={menu.id}>
+                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
+                                            <Link 
+                                                href={`/resolvable/[pid]`} 
+                                                as={`/resolvable/${menu.pid}`} 
+                                                passHref
+                                            >
+                                                <NavDropdown.Item
+                                                    className={`${style.lineHeight} ${style.wordBreak} `}
+                                                >
+                                                    <div>
+                                                        {menu.title}
+                                                    </div>
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </NavDropdown>
+                        {/* Для беременных */}
+                        <NavDropdown 
+                            title='Для беременных' 
+                            id="basic-nav-dropdown"
+                            ref={longMenu}
+                            // onClick={handleClickMakeFixedMenu(longMenu)}
+                            // onClick={handleClickMakeLongMenu}
+                        >
+                            {for_pregnant_menu.map(menu => {
+                                if (menu.id == 1) {
+                                    return (
+                                        <Link 
+                                            href={`/resolvable/[pid]`} 
+                                            as={`/resolvable/${menu.pid}`} 
+                                            passHref
+                                            key={menu.id}
+                                        >
+                                            <NavDropdown.Item 
+                                                className={`${style.lineHeight} ${style.wordBreak} `}
+                                            >
+                                                {menu.title}
+                                            </NavDropdown.Item>
+                                        </Link>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={menu.id}>
+                                            <NavDropdown.Divider className={`${style.dropdownDivider} `} />
+                                            <Link 
+                                                href={`/resolvable/[pid]`} 
+                                                as={`/resolvable/${menu.pid}`} 
+                                                passHref
+                                            >
+                                                <NavDropdown.Item
+                                                    className={`${style.lineHeight} ${style.wordBreak} `}
+                                                >
+                                                    <div>
+                                                        {menu.title}
+                                                    </div>
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </NavDropdown>
+                        
                         <NavDropdown 
                             title="Цены и акции" 
                             id="basic-nav-dropdown"

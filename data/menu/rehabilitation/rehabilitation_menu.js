@@ -4,6 +4,6 @@ export const rehabilitation_menu = [
     { id: 3, title:"Реабилитация после инфаркта", pid: 'heartattack' },
     { id: 4, title:"Легочная эмболия", pid: 'pulmonaryembolism' },
     { id: 5, title:"Реабилитация после эндопротезирования", pid: 'reabilitaciya-posle-endoprotezirovaniya' },
-    { id: 5, title:"Восстановление после компрессионных переломов", pid: 'vosstanovlenie-posle-kompressionnyh-perelomov' },
+    { id: 6, title:"Восстановление после компрессионных переломов", pid: 'vosstanovlenie-posle-kompressionnyh-perelomov' },
     
 ];
