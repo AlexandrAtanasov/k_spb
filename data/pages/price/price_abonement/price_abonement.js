@@ -32,8 +32,8 @@ export const price_abonement = [
       "period": "120 дней", 
       "duration": "Без ограничений", 
       "cost": "63500",
-      "cost_personal": "34800",
-      "cost_doctor": "39600" 
+      "cost_personal": "106000",
+      "cost_doctor": "119000" 
     },
     {
       "id": "Разовое занятие", 
