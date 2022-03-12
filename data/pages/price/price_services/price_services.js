@@ -19,4 +19,9 @@ export const price_services = [
       "duration": "1,5 часа", 
       "cost": "2500" 
     },
+    {
+      "id": "Консультация и сеанс остеопатии", 
+      "duration": "1 час", 
+      "cost": "4000" 
+    },
 ]
