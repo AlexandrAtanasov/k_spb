@@ -25,7 +25,7 @@ export function CarouselComponent( {data} ) {
                                 // className=" justify-content-center"
                                 style={{position: 'absolute', transform: 'translateY(51%)!important'}}
                             >
-                                {/* Кнопка переъода к оплате */}
+                                {/* Кнопка перевода к оплате */}
                                 {/* <MainPresaleButton/> */}
                                 
                                 {/* Кнопка заказаобратного звонка */}
