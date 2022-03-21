@@ -10,6 +10,9 @@ import style from '../../styles/components/CardDeckComponent.module.scss'
 import { presale } from '../../data/main/presale/presale'
 import { presale_headings } from '../../data/main/presale/presale_headings.js'
 
+// import button
+import { CallbackButton } from '../Modal_Callback/MainCallbackButton'
+
 export function MainPresale( ) {
 
     return (
@@ -63,7 +66,11 @@ export function MainPresale( ) {
                 </Card.Body>
             </Card>
             
-            <MainPresaleButton/>
+            {/* Кнопка для оплаты */}
+            {/* <MainPresaleButton/> */}
+
+            {/* Кнопка заказа обратного звонка */}
+            <CallbackButton />
             <br/>
             
         </div>

@@ -28,7 +28,7 @@ export function CarouselComponent( {data} ) {
                                 {/* Кнопка перевода к оплате */}
                                 {/* <MainPresaleButton/> */}
                                 
-                                {/* Кнопка заказаобратного звонка */}
+                                {/* Кнопка заказа обратного звонка */}
                                 <CallbackButton />
 
                             </Carousel.Caption>
