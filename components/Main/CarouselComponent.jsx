@@ -23,7 +23,7 @@ export function CarouselComponent( {data} ) {
                             <Carousel.Caption 
                                 className="d-flex flex-column h-100 align-items-center"
                                 // className=" justify-content-center"
-                                style={{position: 'absolute', transform: 'translateY(51%)!important'}}
+                                style={{position: 'absolute', transform: 'translateY(85%)!important'}}
                             >
                                 {/* Кнопка перевода к оплате */}
                                 {/* <MainPresaleButton/> */}
